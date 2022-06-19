@@ -1,38 +1,219 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap');
+
+body {
+  height: 100vh;
+  background: url('https://cdn.discordapp.com/attachments/799558368657801239/983339825316905030/3389088.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  color: rgb(75, 78, 101);
+}
+
+#big-wrapper {
+  width: 400px;
+  height: 350px;
+  background-color: #d1b5ff;
+  box-shadow: 0px 5px 10px rgb(102, 106, 142);
+  border-radius: 5px;
+  position: absolute;
+  top: 20vh;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+#length {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#length-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+}
+
+#display-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 200px;
+}
+
+#display {
+  text-align: center;
+  background-color: whitesmoke;
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+#control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 38px;
+}
+
+#time-left {
+  font-size: 32px;
+}
+
+.length-label {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+.time-length {
+  margin: 0px 10px;
+  font-size: 22px;
+}
+
+#timer-label {
+  font-size: 22px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.input button {
+  color: whitesmoke;
+  font-size: 35px;
+}
+
+.increment {
+  margin-top: 2px;
+}
+
+.decrement {
+  margin-top: -12px;
+}
+
+#control button{
+  color: rgb(75, 78, 101);
+  font-size: 18px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  width: 40px;
+  height: 30px;
+  padding-top: 5px;
+}
+
+#credit {
+  position: fixed;
+  bottom: 20px;
+  font-size: 14px;
+  width: 100%;
+  right: 0px;
+  left: 0px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.credit-a{
+  color: rgb(75, 78, 101);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 750px) {
+  #big-wrapper {
+    width: 500px;
+    height: 400px;
+    top: 20vh;
+  }
+  #display-control {
+    height: 200px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  #time-left {
+    font-size: 38px;
+  }
+  .length-label {
+    padding-bottom: 2px;
+    font-size: 22px;
+  }
+  .time-length {
+    margin: 0px 10px;
+    font-size: 27px;
+  }
+  #timer-label {
+    font-size: 24px;
+  }
+  #display {
+    width: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  #control button{
+    font-size: 20px;
+    width: 45px;
+    height: 35px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-height: 1100px) {
+  #big-wrapper {
+    top: 26vh;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 450px) {
+  #big-wrapper {
+    width: 300px;
+    top: 18vh;
+  }
+  #length {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+  }
+  .length-label {
+    padding-bottom: 2px;
+    font-size: 18px;
+  }
+  #display {
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  #break-label{
+    display: block;
+    margin-top: -5px;
+  }
+  #timer-label {
+    font-size: 21px;
+  }
+  #time-left {
+    font-size: 30px;
+  }
+  #credit{
+    font-size: 12px;
   }
 }

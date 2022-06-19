@@ -83,6 +83,7 @@ const App = () => {
       setRemainTime(sessionLength * 60);
     }
     const audio = $('#beep')[0];
+    audio.currentTime = 0;
     audio.play();
       const timer = setTimeout(()=>{
         audio.pause();

@@ -118,9 +118,7 @@ button {
   font-size: 18px;
   background-color: whitesmoke;
   border-radius: 4px;
-  width: 40px;
-  height: 30px;
-  padding-top: 5px;
+  padding: 8px 14px;
 }
 
 #credit {
@@ -170,8 +168,7 @@ button {
   }
   #control button{
     font-size: 20px;
-    width: 45px;
-    height: 35px;
+    padding: 8px 16px;
   }
 }
 @media (min-height: 1100px) {
@@ -192,7 +189,7 @@ button {
     width: 100%;
   }
   h1 {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-size: 32px;
   }
   .length-label {
@@ -215,5 +212,8 @@ button {
   }
   #credit{
     font-size: 12px;
+  }
+  #control button{
+    padding: 6px 14px;
   }
 }
